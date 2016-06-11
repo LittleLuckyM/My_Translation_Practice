@@ -67,5 +67,179 @@ and they’re often so trivial or specific that there’s no ready-made software
 (如此繁琐或者是特别,但却没有现成的软件来完成他们)
 Armed with(拥有) a little bit of programming knowledge, you can have your computer do these tasks for you.
 
+Conventions
+--
+
+This book is not designed as a reference manual(参考手册); 
+it’s a guide for begin-ners. 
+
+The coding style sometimes goes against best practices(违背最佳实现方式) (for example,
+some programs use global variables), but that’s a trade-off(权衡取舍) to make the code simpler to learn.
+
+This book is made for people to write throwaway code(一次性代码), 
+so there’s not much time spent on style and elegance(风格和优雅). 
+
+Sophisticated program-ming(复杂的规划) concepts—like(概念) object-oriented programming(面向对象免除), 
+list comprehensions(列表推导), and generators—aren’t covered(生成器也不包含) 
+because of the complexity they add(因为他们增加的难度).
+
+Veteran programmers(编程老手) may point out ways the code in this book 
+could be changed to improve efficiency(提高效率), 
+but this book is mostly concerned with(关心) getting programs to work with the least amount of effort(最少的工作).
+
+what is Programming?
+--
+Television shows and films often show programmers furiously typing 
+cryptic streams of 1s and 0s on glowing screens(发光的屏幕上疯狂的输入什么0和1的数据流), 
+but modern(现代的) programming isn’t that mysterious(如此神秘). 
+
+Programming is simply the act of entering instructions(简单的输入指令的行为) for the computer to perform. 
+
+These instructions might crunch some numbers(处理一些数字),modify text, look up information in files, 
+or communicate with other computers over the Internet.
+
+All programs use basic instructions as building blocks(以简单的指令为基石). 
+Here are a few of the most common ones, in English:(下面是一些最常见的问题)
+
+    “Do this; then do that.”
+    “If this condition is true, perform this action; otherwise, do that action.”
+    “Do this action that number of times.”
+    “Keep doing that until this condition is true.”
+
+You can combine(结合) these building blocks to implement(实现) more intricate decisions(复杂的决策), too. 
+
+For example, here are the programming instructions, called the source code, 
+for a simple program written in the Python programming language. 
+
+Starting at the top, the Python software runs each line of code
+(some lines are run only if a certain condition is true or else Python runs some other line) 
+until it reaches the bottom.
+```python
+passwordFile = open('SecretPasswordFile.txt')
+secretPassword = passwordFile.read()
+print('Enter your password.')
+typedPassword = input()
+if typedPassword == secretPassword:
+    print('Access granted')
+if typedPassword == '12345':
+    print('That password is one that an idiot puts on their luggage.')    
+else:
+    print('Access denied')
+```
+
+You might not know anything about programming, but you could prob-
+ably make a reasonable guess at what the previous code does just by reading
+it. First, the file SecretPasswordFile.txt is opened u, and the secret password in
+it is read v. Then, the user is prompted to input a password (from the key-
+board) w. These two passwords are compared x, and if they’re the same,
+the program prints Access granted to the screen y. Next, the program checks
+to see whether the password is 12345 z and hints that this choice might not
+be the best for a password {. If the passwords are not the same, the pro-
+gram prints Access denied to the screen |.
+
+What Is Python?
+Python refers to the Python programming language (with syntax rules for
+writing what is considered valid Python code) and the Python interpreter
+software that reads source code (written in the Python language) and per-
+forms its instructions. The Python interpreter is free to download from
+http://python.org/, and there are versions for Linux, OS X, and Windows.
+The name Python comes from the surreal British comedy group Monty
+Python, not from the snake. Python programmers are affectionately called
+Pythonistas, and both Monty Python and serpentine references usually pep-
+per Python tutorials and documentation.
+Programmers Don’t Need to Know Much Math
+The most common anxiety I hear about learning to program is that people
+think it requires a lot of math. Actually, most programming doesn’t require
+math beyond basic arithmetic. In fact, being good at programming isn’t
+that different from being good at solving Sudoku puzzles.
+To solve a Sudoku puzzle, the numbers 1 through 9 must be filled in for
+each row, each column, and each 3×3 interior square of the full 9×9 board.
+You find a solution by applying deduction and logic from the starting num-
+bers. For example, since 5 appears in the top left of the Sudoku puzzle shown
+in Figure 0-1, it cannot appear elsewhere in the top row, in the leftmost col-
+umn, or in the top-left 3×3 square. Solving one row, column, or square at a
+time will provide more number clues for the rest of the puzzle.
+Figure 0-1: A new Sudoku puzzle (left) and its solution (right). Despite using numbers,
+Sudoku doesn’t involve much math. (Images © Wikimedia Commons)
+Just because Sudoku involves numbers doesn’t mean you have to
+be good at math to figure out the solution. The same is true of program-
+ming. Like solving a Sudoku puzzle, writing programs involves breaking
+down a problem into individual, detailed steps. Similarly, when debugging
+programs (that is, finding and fixing errors), you’ll patiently observe what
+the program is doing and find the cause of the bugs. And like all skills, the
+more you program, the better you’ll become.
+
+Programming Is a Creative Activity
+Programming is a creative task, somewhat like constructing a castle out
+of LEGO bricks. You start with a basic idea of what you want your castle
+to look like and inventory your available blocks. Then you start building.
+Once you’ve finished building your program, you can pretty up your code
+just like you would your castle.
+The difference between programming and other creative activities is
+that when programming, you have all the raw materials you need in your
+computer; you don’t need to buy any additional canvas, paint, film, yarn,
+LEGO bricks, or electronic components. When your program is written, it
+can easily be shared online with the entire world. And though you’ll make
+mistakes when programming, the activity is still a lot of fun.
+
+
+About this Book
+The first part of this book covers basic Python programming concepts, and
+the second part covers various tasks you can have your computer automate.
+Each chapter in the second part has project programs for you to study. Here’s
+a brief rundown of what you’ll find in each chapter:
+Part I: Python Programming Basics
+Chapter 1: Python Basics Covers expressions, the most basic type of
+Python instruction, and how to use the Python interactive shell soft-
+ware to experiment with code.
+Chapter 2: Flow Control Explains how to make programs decide
+which instructions to execute so your code can intelligently respond to
+different conditions.
+Chapter 3: Functions Instructs you on how to define your own func-
+tions so that you can organize your code into more manageable chunks.
+Chapter 4: Lists Introduces the list data type and explains how to
+organize data.
+Chapter 5: Dictionaries and Structuring Data Introduces the diction-
+ary data type and shows you more powerful ways to organize data.
+Chapter 6: Manipulating Strings Covers working with text data
+(called strings in Python).
+Part II: Automating Tasks
+Chapter 7: Pattern Matching with Regular Expressions Covers how
+Python can manipulate strings and search for text patterns with regular
+expressions.
+Chapter 8: Reading and Writing Files Explains how your programs
+can read the contents of text files and save information to files on your
+hard drive.
+Chapter 9: Organizing Files Shows how Python can copy, move,
+rename, and delete large numbers of files much faster than a human
+user can. It also explains compressing and decompressing files.
+
+Chapter 10: Debugging Shows how to use Python’s various bug-
+finding and bug-fixing tools.
+Chapter 11: Web Scraping Shows how to write programs that can
+automatically download web pages and parse them for information.
+This is called web scraping.
+Chapter 12: Working with Excel Spreadsheets Covers programmati-
+cally manipulating Excel spreadsheets so that you don’t have to read
+them. This is helpful when the number of documents you have to ana-
+lyze is in the hundreds or thousands.
+Chapter 13: Working with PDF and Word Documents Covers pro-
+grammatically reading Word and PDF documents.
+Chapter 14: Working with CSV Files and JSON Data Continues to
+explain how to programmatically manipulate documents with CSV and
+JSON files.
+Chapter 15: Keeping Time, Scheduling Tasks, and Launching
+Programs Explains how time and dates are handled by Python pro-
+grams and how to schedule your computer to perform tasks at certain
+times. This chapter also shows how your Python programs can launch
+non-Python programs.
+Chapter 16: Sending Email and Text Messages Explains how to write
+programs that can send emails and text messages on your behalf.
+Chapter 17: Manipulating Images Explains how to programmatically
+manipulate images such as JPEG or PNG files.
+Chapter 18: Controlling the Keyboard and Mouse with GUI Automation
+Explains how to programmatically control the mouse and keyboard to
+automate clicks and keypresses.
+
 
 
