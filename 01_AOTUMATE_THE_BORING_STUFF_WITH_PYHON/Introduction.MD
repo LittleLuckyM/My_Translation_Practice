@@ -212,62 +212,70 @@ And though you’ll make mistakes when programming, the activity is still a lot 
 About this Book
 --
 
-The first part of this book covers basic Python programming concepts, and
-the second part covers various tasks you can have your computer automate.
-Each chapter in the second part has project programs for you to study. Here’s
-a brief rundown of what you’ll find in each chapter:
-Part I: Python Programming Basics
-Chapter 1: Python Basics Covers expressions, the most basic type of
-Python instruction, and how to use the Python interactive shell soft-
-ware to experiment with code.
-Chapter 2: Flow Control Explains how to make programs decide
+The first part of this book covers(涵盖) basic Python programming concepts(概念), 
+and the second part covers various(各式各样的) tasks you can have your computer automate.
+
+Each chapter in the second part has project programs for you to study. 
+Here’s a brief rundown(简短的纲要) of what you’ll find in each chapter:
+
+**Part I: Python Programming Basics**
+
+Chapter 1: Python Basics Covers expressions, the most basic type of Python instruction, 
+and how to use the Python interactive(交互式) shell software to experiment with code(实验代码).
+
+Chapter 2: Flow Control(控制流) Explains how to make programs decide
 which instructions to execute so your code can intelligently respond to
 different conditions.
-Chapter 3: Functions Instructs you on how to define your own func-
-tions so that you can organize your code into more manageable chunks.
-Chapter 4: Lists Introduces the list data type and explains how to
-organize data.
-Chapter 5: Dictionaries and Structuring Data Introduces the diction-
-ary data type and shows you more powerful ways to organize data.
-Chapter 6: Manipulating Strings Covers working with text data
-(called strings in Python).
-Part II: Automating Tasks
-Chapter 7: Pattern Matching with Regular Expressions Covers how
-Python can manipulate strings and search for text patterns with regular
-expressions.
+
+Chapter 3: Functions Instructs(指导) you on how to define your own functions so that 
+you can organize your code into more manageable chunks(更加方便管理的模块).
+
+Chapter 4: Lists Introduces(介绍) the list data type and explains(解释) how to organize data.
+
+Chapter 5: Dictionaries and Structuring Data(数据结构) Introduces the dictionary data type 
+and shows you more powerful ways to organize data.
+
+Chapter 6: Manipulating(操作) Strings Covers working with text data(called strings in Python).
+
+
+**Part II: Automating Tasks**
+
+Chapter 7: Pattern Matching(模式匹配) with Regular Expressions(正则表达) Covers how Python can manipulate strings 
+and search for text patterns with regular expressions.
+
 Chapter 8: Reading and Writing Files Explains how your programs
-can read the contents of text files and save information to files on your
-hard drive.
-Chapter 9: Organizing Files Shows how Python can copy, move,
-rename, and delete large numbers of files much faster than a human
-user can. It also explains compressing and decompressing files.
+can read the contents of text files and save information to files on your hard drive.
 
-Chapter 10: Debugging Shows how to use Python’s various bug-
-finding and bug-fixing tools.
-Chapter 11: Web Scraping Shows how to write programs that can
-automatically download web pages and parse them for information.
+Chapter 9: Organizing Files Shows how Python can copy, move, rename, and delete large numbers of files 
+much faster than a human user can. 
+It also explains compressing and decompressing files.
+
+Chapter 10: Debugging Shows how to use Python’s various(格式各样的) bug-finding and bug-fixing tools(查找和修补漏洞的工具).
+
+Chapter 11: Web Scraping(网页抓取) Shows how to write programs that can
+automatically download web pages and parse(分析) them for information.
 This is called web scraping.
-Chapter 12: Working with Excel Spreadsheets Covers programmati-
-cally manipulating Excel spreadsheets so that you don’t have to read
-them. This is helpful when the number of documents you have to ana-
-lyze is in the hundreds or thousands.
-Chapter 13: Working with PDF and Word Documents Covers pro-
-grammatically reading Word and PDF documents.
-Chapter 14: Working with CSV Files and JSON Data Continues to
-explain how to programmatically manipulate documents with CSV and
-JSON files.
-Chapter 15: Keeping Time, Scheduling Tasks, and Launching
-Programs Explains how time and dates are handled by Python pro-
-grams and how to schedule your computer to perform tasks at certain
-times. This chapter also shows how your Python programs can launch
-non-Python programs.
+
+Chapter 12: Working with Excel Spreadsheets Covers programmatically(以编程的方式) manipulating Excel spreadsheets 
+so that you don’t have to read them. 
+This is helpful when the number of documents you have to analyze is in the hundreds or thousands.
+
+Chapter 13: Working with PDF and Word Documents Covers programmatically reading Word and PDF documents.
+
+Chapter 14: Working with CSV Files and JSON Data Continues to explain(继续交代) 
+how to programmatically manipulate documents with CSV and JSON files.
+
+Chapter 15: Keeping Time, Scheduling Tasks(调度任务), and Launching Programs Explains 
+how time and dates are handled(处理) by Python programs and 
+how to schedule(计划安排) your computer to perform tasks at certain times(在正确的时间执行任务). 
+This chapter also shows how your Python programs can launch non-Python programs(非python程序).
+
 Chapter 16: Sending Email and Text Messages Explains how to write
-programs that can send emails and text messages on your behalf.
-Chapter 17: Manipulating Images Explains how to programmatically
+programs that can send emails and text messages on your behalf(代替你).
+
+Chapter 17: Manipulating Images(图像处理) Explains how to programmatically
 manipulate images such as JPEG or PNG files.
-Chapter 18: Controlling the Keyboard and Mouse with GUI Automation
-Explains how to programmatically control the mouse and keyboard to
-automate clicks and keypresses.
 
-
+Chapter 18: Controlling the Keyboard and Mouse with GUI Automation(GUI自动化)
+Explains how to programmatically control the mouse and keyboard to automate clicks and keypresses.
 
