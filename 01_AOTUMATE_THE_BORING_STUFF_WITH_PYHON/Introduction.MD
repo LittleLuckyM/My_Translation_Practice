@@ -122,68 +122,96 @@ typedPassword = input()
 if typedPassword == secretPassword:
     print('Access granted')
 if typedPassword == '12345':
-    print('That password is one that an idiot puts on their luggage.')    
+    print('That password is one that an idiot(白痴的) puts(字符串输出) on their luggage(行李).')    
 else:
     print('Access denied')
 ```
 
-You might not know anything about programming, but you could prob-
-ably make a reasonable guess at what the previous code does just by reading
-it. First, the file SecretPasswordFile.txt is opened u, and the secret password in
-it is read v. Then, the user is prompted to input a password (from the key-
-board) w. These two passwords are compared x, and if they’re the same,
-the program prints Access granted to the screen y. Next, the program checks
-to see whether the password is 12345 z and hints that this choice might not
-be the best for a password {. If the passwords are not the same, the pro-
-gram prints Access denied to the screen |.
+You might not know anything about programming, but you could probably make a reasonable guess 
+at what the previous code does just by reading it.
+
+First, the file SecretPasswordFile.txt is opened, and the secret password in it is readed. 
+
+Then, the user is prompted(提示) to input a password (from the keyboard) .
+These two passwords are compared, and if they’re the same,
+the program prints Access granted(授权) to the screen . 
+
+Next, the program checks to see whether the password is 12345 and hints(提示) that 
+this choice might not be the best for a password
+{. If the passwords are not the same, the program prints Access denied to the screen.
 
 What Is Python?
-Python refers to the Python programming language (with syntax rules for
-writing what is considered valid Python code) and the Python interpreter
-software that reads source code (written in the Python language) and per-
-forms its instructions. The Python interpreter is free to download from
-http://python.org/, and there are versions for Linux, OS X, and Windows.
-The name Python comes from the surreal British comedy group Monty
-Python, not from the snake. Python programmers are affectionately called
-Pythonistas, and both Monty Python and serpentine references usually pep-
-per Python tutorials and documentation.
+--
+
+Python refers to(是指) the Python programming language (with syntax rules for writing 
+what is considered valid(合法有效) Python code) 
+and the Python interpreter(解释器) software that reads source code 
+(written in the Python language) and performs its instructions(执行指令). 
+
+The Python interpreter is free to download from http://python.org/, 
+and there are versions for Linux, OS X, and Windows.
+
+The name Python comes from the surreal British comedy group Monty Python
+(超现实主义的英国喜剧组Monty Python), not from the snake(而不是蛇...这是真的么). 
+
+Python programmers are affectionately(亲切地) called Pythonistas(专有词汇:python支持者), 
+and both Monty Python and serpentine references(蛇形图案的引用) usually pepper(经常布满) Python tutorials and documentation(教程和文档).
+
+
 Programmers Don’t Need to Know Much Math
-The most common anxiety I hear about learning to program is that people
-think it requires a lot of math. Actually, most programming doesn’t require
-math beyond basic arithmetic. In fact, being good at programming isn’t
-that different from being good at solving Sudoku puzzles.
-To solve a Sudoku puzzle, the numbers 1 through 9 must be filled in for
-each row, each column, and each 3×3 interior square of the full 9×9 board.
-You find a solution by applying deduction and logic from the starting num-
-bers. For example, since 5 appears in the top left of the Sudoku puzzle shown
-in Figure 0-1, it cannot appear elsewhere in the top row, in the leftmost col-
-umn, or in the top-left 3×3 square. Solving one row, column, or square at a
-time will provide more number clues for the rest of the puzzle.
-Figure 0-1: A new Sudoku puzzle (left) and its solution (right). Despite using numbers,
-Sudoku doesn’t involve much math. (Images © Wikimedia Commons)
-Just because Sudoku involves numbers doesn’t mean you have to
-be good at math to figure out the solution. The same is true of program-
-ming. Like solving a Sudoku puzzle, writing programs involves breaking
-down a problem into individual, detailed steps. Similarly, when debugging
-programs (that is, finding and fixing errors), you’ll patiently observe what
-the program is doing and find the cause of the bugs. And like all skills, the
-more you program, the better you’ll become.
+The most common anxiety(顾虑) I hear about learning to program is that 
+people think it requires a lot of math. 
 
-Programming Is a Creative Activity
-Programming is a creative task, somewhat like constructing a castle out
-of LEGO bricks. You start with a basic idea of what you want your castle
-to look like and inventory your available blocks. Then you start building.
-Once you’ve finished building your program, you can pretty up your code
-just like you would your castle.
-The difference between programming and other creative activities is
-that when programming, you have all the raw materials you need in your
-computer; you don’t need to buy any additional canvas, paint, film, yarn,
-LEGO bricks, or electronic components. When your program is written, it
-can easily be shared online with the entire world. And though you’ll make
-mistakes when programming, the activity is still a lot of fun.
+Actually, most programming doesn’t require math beyond basic arithmetic(除了最基本的运算). 
 
+In fact, being good at programming isn’t that different from being good at solving Sudoku puzzles(数度谜题).
+
+To solve a Sudoku puzzle, the numbers 1 through 9 must be filled in for each row, each column, 
+and each 3×3 interior square(小(内)方块) of the full 9×9 board.
+
+You find a solution by applying deduction(通过推演推演) and logic from the starting numbers. 
+
+For example, since 5 appears in the top left(左上角) of the Sudoku puzzle shown in Figure 0-1, 
+it cannot appear elsewhere in the top row, in the leftmost column, or in the top-left 3×3 square. 
+
+Solving one row, column, or square at a time will provide more number clues(线索) for the rest of the puzzle.
+
+Just because Sudoku involves numbers doesn’t mean you have to 
+be good at math to figure out the solution. 
+
+The same is true of programming. Like solving a Sudoku puzzle, writing programs involves 
+breaking down a problem into individual(将问题拆分成很多个独立的个体), detailed steps. 
+
+Similarly(同样的), when debugging programs (that is, finding and fixing errors), 
+you’ll patiently observe(耐心的观察) what the program is doing and find the cause of the bugs. 
+
+And like all skills, the more you program, the better you’ll become(编码也讲究熟能生巧).
+
+Programming Is a Creative Activity(一个富有创造性的活动)
+--
+
+Programming is a creative task, somewhat(有点) like constructing a castle out of LEGO bricks. 
+(用乐高积木构建城堡)
+
+You start with a basic idea of what you want your castle to look like 
+and inventory your available blocks(清点可使用的积木). 
+
+Then you start building.
+Once you’ve finished building your program, you can pretty up(美化) your code
+just like you would your castle(动词省略,表示对城堡进行美化).
+
+
+The difference between programming and other creative activities is that 
+when programming, you have all the raw materials(原材料) you need in your computer; 
+you don’t need to buy any additional(额外的) canvas(帆布), paint(油漆), film(胶卷), yarn(线),
+LEGO bricks(乐高积木), or electronic components(电子元器件).
+
+When your program is written, it can easily be shared online with the entire world(全世界). 
+And though you’ll make mistakes when programming, the activity is still a lot of fun(犯错同样是极富乐趣的).
 
 About this Book
+--
+
 The first part of this book covers basic Python programming concepts, and
 the second part covers various tasks you can have your computer automate.
 Each chapter in the second part has project programs for you to study. Here’s
