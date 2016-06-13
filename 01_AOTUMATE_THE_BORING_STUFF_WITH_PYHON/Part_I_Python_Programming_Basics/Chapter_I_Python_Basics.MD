@@ -208,35 +208,44 @@ a descriptive(描述性的) name will help make your code more readable.
 Your first Program
 --
 
-While the interactive shell is good for running Python instructions one at
-a time, to write entire Python programs, you’ll type the instructions into
-the file editor. The file editor is similar to text editors such as Notepad or
-TextMate, but it has some specific features for typing in source code. To
-open the file editor in IDLE, select File4New Window.
-The window that appears should contain a cursor awaiting your input,
-but it’s different from the interactive shell, which runs Python instructions
-as soon as you press  enter . The file editor lets you type in many instructions,
-save the file, and run the program. Here’s how you can tell the difference
-between the two:
-•  The interactive shell window will always be the one with the  >>> prompt.
-•  The file editor window will not have the  >>> prompt.
-Now it’s time to create your first program! When the file editor window
-opens, type the following into it:
+While the interactive shell is good for running Python instructions one at a time, 
+to write entire Python programs(完整的python程序), you’ll type the instructions into the file editor. 
 
-Once you’ve entered your source code, save it so that you won’t have
-to retype it each time you start IDLE. From the menu at the top of the file
-editor window, select File4Save As. In the Save As window, enter  hello.py
-in the File Name field and then click Save.
+The file editor is similar to text editors such as Notepad or TextMate, but it has some specific features(特点) for typing in source code. 
+
+To open the file editor in IDLE, select File > New Window.
+
+The window that appears should contain a cursor(光标) awaiting your input,
+but it’s different from the interactive shell, which runs Python instructions as soon as you press  enter . 
+
+The file editor lets you type in many instructions, save the file, and run the program. 
+
+Here’s how you can tell the difference between the two:
+
+    •  The interactive shell window will always be the one with the  >>> prompt.
+    •  The file editor window will not have the  >>> prompt.
+
+Now it’s time to create your first program! When the file editor window opens, type the following into it:
+
+Once you’ve entered your source code, save it so that you won’t have to retype it each time you start IDLE. 
+
+From the menu at the top of the file editor window, select File > Save As. 
+
+In the Save As window, enter  hello.py in the File Name field and then click Save.
+
 You should save your programs every once in a while as you type them.
-That way, if the computer crashes or you accidentally exit from IDLE, you
-won’t lose the code. As a shortcut, you can press  ctrl -S on Windows and
-Linux or  z -S on OS X to save your file.
-Once you’ve saved, let’s run our program. Select Run4Run Module
-or just press the F5 key. Your program should run in the interactive shell
-window that appeared when you first started IDLE. Remember, you have
-to press F5 from the file editor window, not the interactive shell window.
-Enter your name when your program asks for it. The program’s output in
-the interactive shell should look something like this:
+
+That way, if the computer crashes or you accidentally exit(意外退出) from IDLE, you won’t lose the code. 
+
+As a shortcut, you can press  ctrl -S on Windows and Linux or  z -S on OS X to save your file.
+
+Once you’ve saved, let’s run our program. Select Run > Run Module or just press the F5 key. 
+
+Your program should run in the interactive shell window that appeared when you first started IDLE. 
+
+Remember, you have to press F5 from the file editor window, not the interactive shell window.
+
+Enter your name when your program asks for it. The program’s output in the interactive shell should look something like this:
 
 
 When there are no more lines of code to execute, the Python program
