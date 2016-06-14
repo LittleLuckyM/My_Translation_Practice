@@ -248,167 +248,194 @@ Remember, you have to press F5 from the file editor window, not the interactive 
 Enter your name when your program asks for it. The program’s output in the interactive shell should look something like this:
 
 
-When there are no more lines of code to execute, the Python program
-terminates; that is, it stops running. (You can also say that the Python pro-
-gram exits.)
+When there are no more lines of code to execute, the Python program terminates; that is, it stops running. 
+(You can also say that the Python program exits.)
+
 You can close the file editor by clicking the X at the top of the window.
-To reload a saved program, select File4Open from the menu. Do that now,
-and in the window that appears, choose hello.py, and click the Open button.
-Your previously saved hello.py program should open in the file editor window.
-dissecting your Program
-With your new program open in the file editor, let’s take a quick tour of the
+
+To reload a saved program, select File > Open from the menu. Do that now, and in the window that appears, 
+choose hello.py, and click the Open button.
+
+Your previously(以前) saved hello.py program should open in the file editor window.
+
+Dissecting your Program
+--
+
+With your new program open in the file editor, let’s take a quick tour of(快速浏览) the
 Python instructions it uses by looking at what each line of code does.
 
+**Comments**
 
-Comments
 The following line is called a comment.
-u # This program says hello and asks for my name.
-Python ignores comments, and you can use them to write notes or
-remind yourself what the code is trying to do. Any text for the rest of the
-line following a hash mark ( # ) is part of a comment.
-Sometimes, programmers will put a  # in front of a line of code to tem-
-porarily remove it while testing a program. This is called commenting out
-code, and it can be useful when you’re trying to figure out why a program
-doesn’t work. You can remove the  # later when you are ready to put the line
-back in.
-Python also ignores the blank line after the comment. You can add as
-many blank lines to your program as you want. This can make your code
-easier to read, like paragraphs in a book.
-The print() Function
-The  print() function displays the string value inside the parentheses on the
-screen.
-The line  print('Hello world!') means “Print out the text in the string
-'Hello world!' .” When Python executes this line, you say that Python is
-calling the  print() function and the string value is being passed to the func-
-tion. A value that is passed to a function call is an argument. Notice that
-the quotes are not printed to the screen. They just mark where the string
-begins and ends; they are not part of the string value.
-n o t e You can also use this function to put a blank line on the screen; just call  print() with
-nothing in between the parentheses.
-When writing a function name, the opening and closing parentheses at
-the end identify it as the name of a function. This is why in this book you’ll
-see  print() rather than  print . Chapter 2 describes functions in more detail.
-The input() Function
-The  input() function waits for the user to type some text on the keyboard
-and press  enter 
+    # This program says hello and asks for my name.
+Python ignores comments(注释), and you can use them to write notes or remind yourself what the code is trying to do. 
 
-This function call evaluates to a string equal to the user’s text, and the
-previous line of code assigns the  myName variable to this string value.
+Any text for the rest of the line following a hash mark ( # ) is part of a comment.
 
-You can think of the  input() function call as an expression that evalu-
-ates to whatever string the user typed in. If the user entered  'Al' , then the
-expression would evaluate to  myName = 'Al' .
-Printing the User’s Name
-The following call to  print() actually contains the expression  'It is good to
-meet you, ' + myName between the parentheses.
+Sometimes, programmers will put a  # in front of a line of code to temporarily remove it while testing a program. 
 
-Remember that expressions can always evaluate to a single value. If  'Al'
-is the value stored in  myName on the previous line, then this expression evalu-
-ates to  'It is good to meet you, Al' . This single string value is then passed to
-print() , which prints it on the screen.
-The len() Function
-You can pass the  len() function a string value (or a variable containing a
-string), and the function evaluates to the integer value of the number of
-characters in that string.
+This is called commenting out code(注释代码), and it can be useful when you’re trying to figure out why a program doesn’t work. 
+
+You can remove the  # later when you are ready to put the line back in.
+
+Python also ignores the blank line after the comment. You can add as many blank lines to your program as you want. 
+This can make your code easier to read, like paragraphs in a book.
+
+**The print() Function**
+
+The  print() function displays the string value inside the parentheses on the screen.
+The line  print('Hello world!') means “Print out the text in the string 'Hello world!' .” 
+
+When Python executes this line, you say that Python is calling the  print() function and 
+the string value is being passed to the function. 
+
+A value that is passed(传递) to a function call is an argument(参数). Notice that the quotes(引号) are not printed to the screen. 
+
+They just mark where the string begins and ends; they are not part of the string value.
+
+    n o t e You can also use this function to put a blank line on the screen; just call  print() with
+    nothing in between the parentheses.
+
+When writing a function name, the opening and closing parentheses(括号) at the end identify(识别) it as the name of a function. 
+
+This is why in this book you’ll see  print() rather than  print . Chapter 2 describes functions in more detail.
+
+
+**The input() Function**
+
+The  input() function waits for the user to type some text on the keyboard and press  ENTER.
+
+This function call evaluates to a string equal to the user’s text, 
+and the previous line of code assigns the  myName variable to this string value.
+
+You can think of the  input() function call as an expression that evaluates to whatever string the user typed in. 
+
+If the user entered  'Al' , then the expression would evaluate to  myName = 'Al' .
+
+**Printing the User’s Name**
+ 
+The following call to  print() actually contains the expression 'It is good to meet you, ' + myName between the parentheses.
+
+Remember that expressions can always evaluate to a single value. If  'Al' is the value stored in  myName on the previous line, 
+then this expression evaluates to  'It is good to meet you, Al'. 
+
+This single string value is then passed to print() , which prints it on the screen.
+
+**The len() Function**
+
+You can pass the  len() function a string value (or a variable containing a string), 
+and the function evaluates to the integer value of the number of characters in that string.
 
 Enter the following into the interactive shell to try this:
 
-Just like those examples,  len(myName) evaluates to an integer. It is then
-passed to  print() to be displayed on the screen. Notice that  print() allows
-you to pass it either integer values or string values. But notice the error that
-shows up when you type the following into the interactive shell:
+Just like those examples,  len(myName) evaluates to an integer. It is then passed to  print() to be displayed on the screen. 
 
-The  print() function isn’t causing that error, but rather it’s the expres-
-sion you tried to pass to  print() . You get the same error message if you type
-the expression into the interactive shell on its own.
+Notice that  print() allows you to pass it either integer values or string values. 
 
-Python gives an error because you can use the  + operator only to add
-two integers together or concatenate two strings. You can’t add an integer
-to a string because this is ungrammatical in Python. You can fix this by
-using a string version of the integer instead, as explained in the next section.
-The str(), int(), and float() Functions
-If you want to concatenate an integer such as  29 with a string to pass to
-print() , you’ll need to get the value  '29' , which is the string form of  29 . The
-str() function can be passed an integer value and will evaluate to a string
-value version of it, as follows:
+But notice the error that shows up when you type the following into the interactive shell:
 
-Because  str(29) evaluates to  '29' , the expression  'I am ' + str(29) +
-' years old.' evaluates to  'I am ' + '29' + ' years old.' , which in turn
-evaluates to  'I am 29 years old.' . This is the value that is passed to the
-print() function.
-The  str() ,  int() , and  float() functions will evaluate to the string, inte-
-ger, and floating-point forms of the value you pass, respectively. Try con-
-verting some values in the interactive shell with these functions, and watch
-what happens.
+The  print() function isn’t causing that error, but rather it’s the expression you tried to pass to  print() . 
 
-The previous examples call the  str() ,  int() , and  float() functions
-and pass them values of the other data types to obtain a string, integer,
-or floating-point form of those values.
-The  str() function is handy when you have an integer or float that you
-want to concatenate to a string. The  int() function is also helpful if you
-have a number as a string value that you want to use in some mathematics.
-For example, the  input() function always returns a string, even if the user
-enters a number. Enter  spam = input() into the interactive shell and enter  101
-when it waits for your text.
+You get the same error message if you type the expression into the interactive shell on its own.
 
-The value stored inside  spam isn’t the integer  101 but the string  '101' .
-If you want to do math using the value in  spam , use the  int() function to
-get the integer form of  spam and then store this as the new value in  spam. 
+Python gives an error because you can use the  + operator only to add two integers together or concatenate two strings. 
 
-Now you should be able to treat the  spam variable as an integer instead
-of a string.
+You can’t add an integer to a string because this is ungrammatical(非法的) in Python. 
+You can fix this by using a string version of the integer instead, as explained in the next section.
 
-Note that if you pass a value to  int() that it cannot evaluate as an inte-
-ger, Python will display an error message.
+**The str(), int(), and float() Functions**
 
-The  int() function is also useful if you need to round a floating-point
-number down.
+If you want to concatenate an integer such as  29 with a string to pass to print() , you’ll need to get the value  '29' , 
+which is the string form of  29 . 
 
-In your program, you used the  int() and  str() functions in the last
-three lines to get a value of the appropriate data type for the code.
+The str() function can be passed an integer value and will evaluate to a string value version of it, as follows:
 
-The  myAge variable contains the value returned from  input() . Because
-the  input() function always returns a string (even if the user typed in a num-
-ber), you can use the  int(myAge) code to return an integer value of the string
-in  myAge . This integer value is then added to  1 in the expression  int(myAge) + 1 .
-The result of this addition is passed to the  str() function:  str(int(myAge)
-+ 1) . The string value returned is then concatenated with the strings  'You
-will be ' and  ' in a year.' to evaluate to one large string value. This large
-string is finally passed to  print() to be displayed on the screen.
-Let’s say the user enters the string  '4' for  myAge . The string  '4' is con-
-verted to an integer, so you can add one to it. The result is  5 . The  str() func-
-tion converts the result back to a string, so you can concatenate it with the
-second string,  'in a year.' , to create the final message. These evaluation
-steps would look something like Figure 1-4.
+Because  str(29) evaluates to  '29' , the expression  'I am ' + str(29) + ' years old.' evaluates to  'I am ' + '29' + ' years old.' , 
+which in turn(反过来) evaluates to  'I am 29 years old.' . 
+This is the value that is passed to the print() function.
 
-text AnD numBer equivAlenCe
-Although the string value of a number is considered a completely different
-value from the integer or floating-point version, an integer can be equal to a
-floating point .
-Python makes this distinction because strings are text, while integers and
-floats are both numbers .
+The  str() ,  int() , and  float() functions will evaluate to the string, integer, 
+and floating-point forms of the value you pass, respectively(分别地). 
+
+Try converting some values in the interactive shell with these functions, and watch what happens.
+
+The previous examples call the  str() ,  int() , and  float() functions and pass them values of the other data types 
+to obtain(获得) a string, integer, or floating-point form of those values.
+
+The  str() function is handy(方便的) when you have an integer or float that you want to concatenate to a string. 
+
+The  int() function is also helpful if you have a number as a string value that you want to use in some mathematics.
+
+For example, the  input() function always returns a string, even if the user enters a number. 
+
+Enter  spam = input() into the interactive shell and enter  101 when it waits for your text.
+
+The value stored inside  spam isn’t the integer  101 but the string  '101' . 
+If you want to do math using the value in  spam , 
+use the  int() function to get the integer form of  spam and then store this as the new value in  spam. 
+
+Now you should be able to treat(对待) the  spam variable as an integer instead of a string.
+
+Note that if you pass a value to  int() that it cannot evaluate as an integer, Python will display an error message.
+
+The  int() function is also useful if you need to round(四舍五入) a floating-point number down.
+
+In your program, you used the  int() and  str() functions in the last three lines to get a value of the appropriate data type for the code.
+
+The  myAge variable contains the value returned from  input() . 
+
+Because the  input() function always returns a string (even if the user typed in a number), 
+you can use the  int(myAge) code to return an integer value of the string in  myAge . 
+
+This integer value is then added to  1 in the expression  int(myAge) + 1 .
+
+The result of this addition is passed to the  str() function:  str(int(myAge) + 1) . 
+
+The string value returned is then concatenated with the strings  'You will be ' and  ' in a year.' to evaluate to one large string value. 
+
+This large string is finally passed to  print() to be displayed on the screen.
+Let’s say the user enters the string  '4' for  myAge . 
+
+The string  '4' is converted to an integer, so you can add one to it. 
+
+The result is  5 . The  str() function converts the result back to a string, so you can concatenate it with the second string,  
+'in a year.' , to create the final message. 
+These evaluation steps(求值过程) would look something like Figure 1-4.
+
+**Text AnD numBer equivAlenCe**
+
+Although the string value of a number is considered(被认为) a completely different value from the integer or floating-point version, 
+an integer can be equal to a floating point .
+
+Python makes this distinction(区别) because strings are text, while integers and floats are both numbers .
 
 Summary
-You can compute expressions with a calculator or type string concatena-
-tions with a word processor. You can even do string replication easily by
-copying and pasting text. But expressions, and their component values—
-operators, variables, and function calls—are the basic building blocks
-that make programs. Once you know how to handle these elements, you
-will be able to instruct Python to operate on large amounts of data for you.
-It is good to remember the different types of operators ( + ,  - ,  * ,  / ,  // ,  % ,
-and  ** for math operations, and  + and  * for string operations) and the three
-data types (integers, floating-point numbers, and strings) introduced in this
-chapter.
-A few different functions were introduced as well. The  print() and  input()
-functions handle simple text output (to the screen) and input (from the key-
-board). The  len() function takes a string and evaluates to an int of the num-
-ber of characters in the string. The  str() ,  int() , and  float() functions will
-evaluate to the string, integer, or floating-point number form of the value
-they are passed.
-In the next chapter, you will learn how to tell Python to make intelli-
-gent decisions about what code to run, what code to skip, and what code to
-repeat based on the values it has. This is known as flow control, and it allows
-you to write programs that make intelligent decisions.
+--
+
+You can compute(计算) expressions with a calculator(计算器) or type string concatenations(串连) with a word processor(处理程序).
+
+You can even do string replication easily by copying and pasting text. 
+
+But expressions, and their component values-operators(值的操作的组合), variables, 
+and function calls are the basic building blocks that make programs. 
+
+
+Once you know how to handle these elements, you will be able to instruct Python to operate on large amounts of data for you.
+
+It is good to remember the different types of operators ( + ,  - ,  * ,  / ,  // ,  % , and  ** for math operations, 
+and  + and  * for string operations) and the three data types (integers, floating-point numbers, and strings) introduced in this chapter.
+
+A few different functions were introduced as well. 
+The  print() and  input() functions handle simple text output (to the screen) and input (from the keyboard). 
+
+The  len() function takes a string and evaluates to an int of the number of characters in the string. 
+
+The  str() ,  int() , and  float() functions will evaluate to the string, integer, or floating-point number form of the value they are passed.
+
+In the next chapter, you will learn how to tell Python to make intelligent decisions(智能的决策) about what code to run, 
+what code to skip, and what code to repeat based on the values it has. 
+
+This is known as flow control, and it allows you to write programs that make intelligent decisions.
 
 
 
