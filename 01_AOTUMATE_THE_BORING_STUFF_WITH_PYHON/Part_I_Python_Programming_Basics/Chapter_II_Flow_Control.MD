@@ -58,6 +58,29 @@ the Starting, Stopping, and Stepping arguments to range()
 
 importing modules
 
+    •  The  import keyword
+    •  The name of the module
+    •  Optionally, more module names, as long as they are separated by commas
+
+from import Statements
+
+ending a Program early with sys.exit()
+
+Summary
+--
+ round()
+
+    round(...)                                                                             
+        round(number[, ndigits]) -> number
+        Round a number to a given precision(精度) in decimal digits(小数位) (default 0 digits). 
+        This returns an int when called with one argument, otherwise the same type as the number. 
+        'ndigits' may be negative. 
+
+abs()
+    
+    abs(x, /)
+    Return the absolute value(绝对值) of the argument.
+
 
 
 
@@ -67,7 +90,13 @@ importing modules
 
 词汇学习 words study
 --
-    
+
+    intelligent 智能的
+    concept 概念
+    composed 组合
+    alternative 替代
+    embedded 嵌入
+    a related group of 一个相关的组
     I never apologize for my puns 我从不为我的双关语道歉
     flexible 灵活的
     the amount that the variable is increased by 变量增长的数量   
