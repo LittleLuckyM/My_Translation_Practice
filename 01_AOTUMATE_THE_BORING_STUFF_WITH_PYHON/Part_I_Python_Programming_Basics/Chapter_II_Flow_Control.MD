@@ -33,9 +33,30 @@ In Python, an  if statement consists of the following:
 
 Else Statements
 
+While Loop Statements
 
+    •  The  while keyword
+    •  A condition (that is, an expression that evaluates to  True or  False )
+    •  A colon
+    •  Starting on the next line, an indented block of code (called the  while clause)
 
+An annoying while Loop
 
+break Statements
+
+continue Statements
+
+for Loops and the range() Function
+
+    The  while loop keeps looping while its condition is  True (which is the reasonfor its name), 
+    but what if you want to execute a block of code only a certain number of times? 
+    You can do this with a  for loop statement and the  range() function.
+
+an Equivalent while Loop 
+
+the Starting, Stopping, and Stepping arguments to range()
+
+importing modules
 
 
 
@@ -46,8 +67,22 @@ Else Statements
 
 词汇学习 words study
 --
-
-
+    
+    I never apologize for my puns 我从不为我的双关语道歉
+    flexible 灵活的
+    the amount that the variable is increased by 变量增长的数量   
+    multiple arguments separated by a comma 逗号隔开的多个参数
+    trick 窍门
+    busywork 外加作业（使学生不致空闲而故意外加的作业）
+    increments 增量
+    iteration 迭代
+    claim 声明
+    statement 语句
+    terminate 终止
+    KeyboardInterrupt 键盘中断指令
+    get stuck in  被卡住,受困于
+    trAPPeD 受困于
+    reevaluates 重新判断评审
     a weekend errand list 一个周末的差事列表
     from the first line of code and simply execute every line, straight to the end 从头到尾简单的执行每一行
     directly correspond to the symbols in a flowchart 直接对应流程图
@@ -72,6 +107,11 @@ Else Statements
     the actual decisions 实际的决策
     Pretend 假设
     colon 冒号
+    reaches 达到
+    immediately 立刻
+    An infinite loop 无限循环
+    merely 仅仅
+
 
 
 end
