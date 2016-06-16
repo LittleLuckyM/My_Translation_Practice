@@ -95,8 +95,11 @@ Summary
 
 
 
+
+
 Words study
 --
+    addition 除了
     noninteger 非整数
     Validation 验证 
     sequence 顺序
